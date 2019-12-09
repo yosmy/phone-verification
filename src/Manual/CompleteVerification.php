@@ -73,7 +73,7 @@ class CompleteVerification implements Yosmy\Phone\CompleteVerification
             $number,
             $code
         )) {
-//            throw new Yosmy\Phone\Verification\Code\WrongValueException();
+            throw new Yosmy\Phone\Verification\Code\WrongValueException();
         }
 
         $this->resetAttempt->reset(
