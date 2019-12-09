@@ -3,17 +3,11 @@
     "description": "",
     "require": {
         "php": ">=7.2",
-        "ext-json": "*",
-        "mongodb/mongodb": "~1",
-        "yosmy/mongo": "@dev",
-        "yosmy/phone": "@dev",
-        "yosmy/http": "@dev",
-        "yosmy/sms": "@dev",
-        "hackzilla/password-generator": "^1.4"
+        "yosmy/phone-verification-process": "@dev"
     },
     "require-dev": {
-        "symsonte/framework": "@dev",
-        "symfony/debug": "~4"
+        "symfony/debug": "~4",
+        "phpunit/phpunit": "^8"
     },
     "autoload": {
         "psr-4": {
@@ -25,8 +19,7 @@
     "autoload-dev": {
         "psr-4": {
             "Yosmy\\Phone\\Test\\": [
-                "test/setup",
-                "test/src"
+                "tests"
             ]
         }
     },
